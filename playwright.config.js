@@ -1,9 +1,9 @@
 /** @type {import('@playwright/test').PlaywrightTestConfig} */
 const config = {
 	webServer: {
-		command: 'npm run build && npm run preview',
+		command: 'pnpm next:build && pnpm start',
 		port: 3000
 	}
 };
 
-export default config;
+module.exports = config;
