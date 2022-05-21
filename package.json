@@ -1,12 +1,23 @@
 {
   "name": "miduweather",
   "version": "0.0.2",
+  "private": true,
   "scripts": {
-    "test": "playwright test",
+    "next:dev": "next dev",
+    "next:build": "next build",
+    "start": "next start",
+    "next:lint": "next lint",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
+  "dependencies": {
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.21.0"
+    "@playwright/test": "^1.21.0",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6"
   }
 }
